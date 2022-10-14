@@ -6,7 +6,7 @@
 ### Digital & Serious Games Personal Repository: xxx
 
 # Introduction
-geia
+
 # Summary
 
 
