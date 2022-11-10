@@ -21,6 +21,7 @@
 - Πρόσθεσα αυτό το κομμάτι κώδικα για να κινείται ο χαρακτήρας δεξία, αριστερά, πάνω και κάτω.
 - 
 ***CODE***
+
 public classtheseusController : MonoBehaviour
 {
    // Start is called before the first frame update
