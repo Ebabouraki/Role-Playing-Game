@@ -55,7 +55,9 @@
         }  
       } 
       
-    Στο επόμενο βήμα χρησιμοποίησα αυτό το Tileset για τη δημιουργία αλλά και τη διακόσμηση του λαβύρινθου:![labyrinth_tiles_decorates](https://user-images.githubusercontent.com/100956280/201228171-23146acc-ab85-400f-9342-e29a46df6ecc.png)
+    Στο επόμενο βήμα χρησιμοποίησα αυτό το Tileset για τη δημιουργία αλλά και τη διακόσμηση του λαβύρινθου:
+    ![labyrinth_tiles_decorates](https://user-images.githubusercontent.com/100956280/201230749-11ee0401-e2c1-4e54-be3b-d12bb1c92021.png)
+
     
     - Επίσης έφτιαξα shorting layers για το background, το παίχτη και τα διακοσμητικά έτσι ώστε να υπάρχει ταξινομηση στα layer που βρίσκονται τα sprites. 
     - Τα sprites με μικρότερο αριθμό εμφανίζονται πριν από τα sprites με μεγαλύτερο αριθμό. 
