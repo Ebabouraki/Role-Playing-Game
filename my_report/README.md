@@ -17,8 +17,9 @@
 ![theseus_sprites-PhotoRoom](https://user-images.githubusercontent.com/100956280/201208656-ea5d7197-de8d-4682-8126-267479bf4371.png)
 Παρακάτω έφτιαξα ένα φάκελο Art και έβαλα μέσα το φάκελο Sprites και με drag & drop πρόσθεσα το `sprite sheet`. Έπειτα, άλλαξα το `sprite mode` σε **multiple** και με το  `sprite editor` έκανα `slice` για να κόψει αυτόματα όλες τις εικόνες που περιέχει το `sprite sheet` όπως δείξαμε και στο δεύτερο εργαστήριο. Πρόσθεσα το sprite στη σκηνή.
 
-- Για τη κίνηση του χαρακτήρα μου με τη βοήθεια από [εδώ](https://learn.unity.com/tutorial/character-controller-and-keyboard-input?uv=2020.3&projectId=5c6166dbedbc2a0021b1bc7c#5d66a2eeedbc2a00209ce199) έφτιαξα ένα φάκελο στα Αssets το οποίο ονόμασα scripts και πρόσθεσα ένα `C# Script`, τον ονόμασα theseusController και πρόσθεσα αυτό το κομμάτι κώδικα για να κινείται ο χαρακτήρας δεξία, αριστερά, πάνω και κάτω.
-`public class theseusController : MonoBehaviour
+- Για τη κίνηση του χαρακτήρα μου με τη βοήθεια από [εδώ](https://learn.unity.com/tutorial/character-controller-and-keyboard-input?uv=2020.3&projectId=5c6166dbedbc2a0021b1bc7c#5d66a2eeedbc2a00209ce199) έφτιαξα ένα φάκελο στα Αssets το οποίο ονόμασα scripts και δημιούργησα ένα `C# Script`, τον ονόμασα theseusController. 
+- Πρόσθεσα αυτό το κομμάτι κώδικα για να κινείται ο χαρακτήρας δεξία, αριστερά, πάνω και κάτω.
+`<br> public class theseusController : MonoBehaviour</br>
 {
    // Start is called before the first frame update
    void Start()
