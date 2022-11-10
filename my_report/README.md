@@ -26,19 +26,12 @@ public class theseusController : MonoBehaviour
 {
 
    // Start is called before the first frame update
-   
    void Start()
-   
    {
-   
    }
-   
    // Update is called once per frame
-   
    void Update()
-   
    {
-   
        float horizontal = Input.GetAxis("Horizontal");
        
        float vertical = Input.GetAxis("Vertical");
@@ -50,11 +43,8 @@ public class theseusController : MonoBehaviour
        position.y = position.y + 3.0f * vertical * Time.deltaTime;
        
        transform.position = position;
-       
-   }
-   
-}
-`
+         }  
+}`
 
 
 
