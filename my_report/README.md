@@ -56,13 +56,14 @@
       } 
       
     Στο επόμενο βήμα χρησιμοποίησα αυτό το Tileset για τη δημιουργία αλλά και τη διακόσμηση του λαβύρινθου με βοήθεια απο [εδώ](https://learn.unity.com/tutorial/world-design-tilemaps?uv=2020.3&projectId=5c6166dbedbc2a0021b1bc7c#5cdd60deedbc2a12d5ac2bdf) και  [εδώ](https://learn.unity.com/tutorial/decorating-the-world?uv=2020.3&projectId=5c6166dbedbc2a0021b1bc7c#5ce2878aedbc2a0704649373) :
+    
     ![labyrinth_tiles_decorates](https://user-images.githubusercontent.com/100956280/201230749-11ee0401-e2c1-4e54-be3b-d12bb1c92021.png)
 
     
     - Επίσης έφτιαξα shorting layers για το background, το παίχτη και τα διακοσμητικά έτσι ώστε να υπάρχει ταξινομηση στα layer που βρίσκονται τα sprites. 
     - Τα sprites με μικρότερο αριθμό εμφανίζονται πριν από τα sprites με μεγαλύτερο αριθμό. 
     Βοηθήθηκα από τις σημειώσεις του Lab 2 πιο συγκεκριμένα από [εδώ](https://eclass.aegean.gr/modules/document/file.php/511137/Εργαστήριο/Computer%20Games%20Lab%202/Computer%20Games%20Lab%202.pdf)
-    - 
+   
 
 Μετά από όλα αυτα κατέληξα σε αυτη τη μορφή του λαβύρινθου:
 ![Στιγμιότυπο οθόνης (715)](https://user-images.githubusercontent.com/100956280/201229771-d95f2804-1899-4321-a16c-33bccd86b342.png)
