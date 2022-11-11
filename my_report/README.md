@@ -62,7 +62,7 @@
     
     - Επίσης έφτιαξα shorting layers για το background, το παίχτη και τα διακοσμητικά έτσι ώστε να υπάρχει ταξινομηση στα layer που βρίσκονται τα sprites. 
     - Τα sprites με μικρότερο αριθμό εμφανίζονται πριν από τα sprites με μεγαλύτερο αριθμό. 
-    Βοηθήθηκα από τις σημειώσεις του Lab 2 πιο συγκεκριμένα από [εδώ](https://eclass.aegean.gr/modules/document/file.php/511137/Εργαστήριο/Computer%20Games%20Lab%202/Computer%20Games%20Lab%202.pdf)
+    -Βοηθήθηκα από τις σημειώσεις του Lab 2 πιο συγκεκριμένα από [εδώ](https://eclass.aegean.gr/modules/document/file.php/511137/Εργαστήριο/Computer%20Games%20Lab%202/Computer%20Games%20Lab%202.pdf)
    
 
 Μετά από όλα αυτα κατέληξα σε αυτη τη μορφή του λαβύρινθου:
