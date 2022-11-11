@@ -3,7 +3,7 @@
 ### First and Last Name: Ελένη Βαβουράκη
 ### University Registration Number: dpsd19009
 ### GitHub Personal Profile: https://github.com/Ebabouraki
-### Digital & Serious Games Personal Repository: xhttps://github.com/Ebabouraki/Role-Playing-Game
+### Digital & Serious Games Personal Repository: https://github.com/Ebabouraki/Role-Playing-Game
 
 # Introduction
 Με επιρροή από το Μύθο με το θυσέα και το Μινώταυρο, το παιχνίδι μου θα απεικονίζει το λαβύρινθο. Ο Θησέας έχει ως στόχο να σκοτώσει το μινώταυρο.
@@ -11,7 +11,7 @@
 
 
 # 1st Deliverable
-- Πρώτα από όλα έκανα εγκατάσταση του `Unity` την εκδοση 2020.3.20f1. 
+- Πρώτα από όλα έκανα εγκατάσταση του `Unity` την εκδοση 2020.3.20f1 και στο `Unity Hub` πρόσθεσα στα `Modes` τη πλατφόρμα `WebGl`. 
 - Δημιούργησα ένα "2D project". Στην συνέχεια έφτιαξα μια νέα σκηνή “MainScene”.
 - Στη συνέχεια αφού είχε προηγηθεί ένα brainstorming για την ιστορία του παιχνιδιού μου, δηλαδή τη δημιουργία του λαβύρινθου εμπνευσμένο από το μύθο του Θησέα και του Μινώταυρου. Βρήκα το χαρακτήρα που θα αναπαραστήσει το Θησέα σε ένα `sprite sheet` (Εικόνα) για την εισαγωγή του `animation` στο επόμενο παραδοτέο. Στην εικόνα αφαιρεσα το φόντο με το [remove background](https://www.remove.bg) 
 ![theseus_sprites-PhotoRoom](https://user-images.githubusercontent.com/100956280/201208656-ea5d7197-de8d-4682-8126-267479bf4371.png)
@@ -65,9 +65,11 @@
 Μετά από όλα αυτα κατέληξα σε αυτη τη μορφή του λαβύρινθου:
 ![Στιγμιότυπο οθόνης (715)](https://user-images.githubusercontent.com/100956280/201229771-d95f2804-1899-4321-a16c-33bccd86b342.png)
 
-Τέλος, πρόσθεσα animation στο χαρακτήρα να περπατάει, όπως επίσης δείξαμε στο δεύτερο εργαστήριο, δηλαδή πήγα πατώμτας πάνω στο χαρακτηρα από την ιερασρχία στο window>animation και δημιούργησα ένα νέο animation το walking_right οπως φένεται παρακάτω: 
+Επιπλέον, πρόσθεσα animation στο χαρακτήρα να περπατάει, όπως επίσης δείξαμε στο δεύτερο εργαστήριο, δηλαδή πήγα πατώμτας πάνω στο χαρακτηρα από την ιερασρχία στο window>animation και δημιούργησα ένα νέο animation το walking_right οπως φένεται παρακάτω: 
 
 https://user-images.githubusercontent.com/100956280/201231632-772bdb0d-cde5-4a2a-b91a-ea324fc861c9.mp4
+
+Τέλος, για το ανέβασμα στο προσωπικό μου repository github, αρχικά πήγα στο `build settings` επέλεξα τη πλατφόρμα `WebGl`  και έκανα προσθήκη της σκηνής μου και μετα πήγα στο `player settings` συγκεκριμένα στο `publishing settings` και έκανα ***disbled*** το  `compression format` και πατησα το  `build and run` και το αποθήκευσα σε ένα φάκελο build. Στο Github ανέβασα το περιεχόμενο του φακέλου  `build`.
 
 
 
