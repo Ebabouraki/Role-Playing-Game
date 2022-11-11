@@ -55,7 +55,7 @@
         }  
       } 
       
-    Στο επόμενο βήμα χρησιμοποίησα αυτό το Tileset για τη δημιουργία αλλά και τη διακόσμηση του λαβύρινθου με βοήθεια απο [εδώ](https://learn.unity.com/tutorial/world-design-tilemaps?uv=2020.3&projectId=5c6166dbedbc2a0021b1bc7c#5cdd60deedbc2a12d5ac2bdf) και  [εδώ](https://learn.unity.com/tutorial/decorating-the-world?uv=2020.3&projectId=5c6166dbedbc2a0021b1bc7c#5ce2878aedbc2a0704649373) :
+    Στο επόμενο βήμα χρησιμοποίησα αυτό το Tileset  με βοήθεια για τη δημιουργία του λαβύρινθου απο [εδώ](https://learn.unity.com/tutorial/world-design-tilemaps?uv=2020.3&projectId=5c6166dbedbc2a0021b1bc7c#5cdd60deedbc2a12d5ac2bdf) και για τη διακόσμηση του λαβύρινθου από [εδώ](https://learn.unity.com/tutorial/decorating-the-world?uv=2020.3&projectId=5c6166dbedbc2a0021b1bc7c#5ce2878aedbc2a0704649373) :
     
     ![labyrinth_tiles_decorates](https://user-images.githubusercontent.com/100956280/201230749-11ee0401-e2c1-4e54-be3b-d12bb1c92021.png)
 
