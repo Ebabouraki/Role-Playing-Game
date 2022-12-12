@@ -23,7 +23,7 @@
 - Για τη κίνηση του χαρακτήρα μου με τη βοήθεια από [εδώ](https://learn.unity.com/tutorial/character-controller-and-keyboard-input?uv=2020.3&projectId=5c6166dbedbc2a0021b1bc7c#5d66a2eeedbc2a00209ce199) έφτιαξα ένα φάκελο στα Αssets το οποίο ονόμασα scripts και δημιούργησα ένα `C# Script`, τον ονόμασα theseusController. 
 - Πρόσθεσα αυτό το κομμάτι κώδικα για να κινείται ο χαρακτήρας δεξία, αριστερά, πάνω και κάτω.
 
-      public class theseusController : MonoBehaviour 
+      public class theseus_control : MonoBehaviour 
   
       {
    
@@ -118,7 +118,12 @@ https://user-images.githubusercontent.com/100956280/201231632-772bdb0d-cde5-4a2a
         rigidbody2d.MovePosition(position);
      }
     }
+    
+- Στη συνέχεια, προσθεσα Box Collider 2D σε όλα τα αντικείμενα που είχα προσθέσει στη σκηνή μου και το έβαλα στο κάτω μέρος έτσι ώστε ο χαρακτήρας μου να μπορεί να περάσει από πίσω τους. Επίσης τα έκανα prefab έτσι ώστε να μπορώ να τα χρησιμοποίήσω περισσότερο από μία φορές για τη διακοσμηση του κόσμου μου.
 
+- Παρακάτω πρόσθεσα Box Collider 2D σε όλα τα tiles για να περιορίσω το παίκτη να κινείται μέσα στους διαδρόμους του λαβύρινθου.δηλαδή ο χάρτης μου εγινε έτσι: 
+
+![Στιγμιότυπο οθόνης (737)](https://user-images.githubusercontent.com/100956280/207052583-45cd7e3b-09e1-4e5e-9e90-0ca2adadd7e2.png)
 
 
 
