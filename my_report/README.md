@@ -126,7 +126,7 @@ https://user-images.githubusercontent.com/100956280/201231632-772bdb0d-cde5-4a2a
 ![Στιγμιότυπο οθόνης (737)](https://user-images.githubusercontent.com/100956280/207052583-45cd7e3b-09e1-4e5e-9e90-0ca2adadd7e2.png)
 
 
-- Έπειτα  με βοήθεια απο το tutorial [εδώ](https://learn.unity.com/tutorial/world-interactions-collectibles?uv=2020.3&projectId=5c6166dbedbc2a0021b1bc7c#)πρόσθεσα ένα αντικείμενο που δίνει ζωή και ένα αντικέιμενο που θα αυξάνει τη ταχύτητα του Θησέα.
+- Έπειτα  με βοήθεια απο το tutorial [εδώ](https://learn.unity.com/tutorial/world-interactions-collectibles?uv=2020.3&projectId=5c6166dbedbc2a0021b1bc7c#) πρόσθεσα ένα αντικείμενο που δίνει ζωή και ένα αντικέιμενο που θα αυξάνει τη ταχύτητα του Θησέα.
 ![Στιγμιότυπο οθόνης (738)](https://user-images.githubusercontent.com/100956280/207056523-676ae084-9a48-4d84-9407-934bd55834d8.png)![Στιγμιότυπο οθόνης (740)](https://user-images.githubusercontent.com/100956280/207056268-20290673-d89a-48c7-993d-16147e406e3a.png)
 
 Αρχικά έδωσα στο παίκτη μου υγεία και ταχύτητα τροποποιώντας το σενάριο του Θησέα ως εξής:
@@ -214,7 +214,8 @@ https://user-images.githubusercontent.com/100956280/201231632-772bdb0d-cde5-4a2a
         }
     }
     }
-- Παρακάτω έφτιαξα ένα σενάριο για το αντικείμενο ταχύτητας έτσι ώστε οταν συγκρούεται ο χαρακτηρας με αυτό το αντικείμενο να κατσστεφεται και να αυξανει τη ταχύτητα  του παίκτη.
+- Παρακάτω έφτιαξα ένα σενάριο για το αντικείμενο ταχύτητας έτσι ώστε οταν συγκρούεται ο χαρακτηρας με αυτό το αντικείμενο να κατσστεφεται και να αυξανει τη ταχύτητα  του παίκτη.[εδώ]( https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiIq7HIn_T7AhW6R_EDHUr4DCUQz40FegQIDBAc&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DfDXtMlL2ahU&usg=AOvVaw1MTnxse5JP302GM8C50DVd) 
+
 Ο κώδκας είναι ο εξής:
    
     using System.Collections;
