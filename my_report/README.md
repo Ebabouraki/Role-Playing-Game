@@ -79,6 +79,47 @@ https://user-images.githubusercontent.com/100956280/201231632-772bdb0d-cde5-4a2a
 
 
 # 2nd Deliverable
+- Αρχικά, με βάση αυτο το tutorial [εδώ](https://learn.unity.com/tutorial/world-interactions-blocking-movement?uv=2020.3&projectId=5c6166dbedbc2a0021b1bc7c#) έκανα το παίχτη μου να μη παιρνάει μέσα από τα αντικείμενα αλλά να συγκρούεται με αυτα. Προσθεσα δηλαδή στο κύριο χαρακτήρα μου Rigidbody2D και έβαλα το gravity 0 έτσι ώστε να μη πέφτει και έκανα freeze rotation τον άξονα z για να μη περιστρέφεται οτάν συγκρούεται με άλλα αντικείμενα.
+
+![Στιγμιότυπο οθόνης (735)](https://user-images.githubusercontent.com/100956280/207046480-a816e031-cadf-4f7d-a927-cbd977f57102.png)
+
+Πρόσθεσα στο χαρακτήρα μου Box Collider 2D. Το Collider το έβαλα να  καλύπτει μόνο τα πόδια του Θησέα, επειδή ο χαρακτήρας πρέπει να μπορεί να κινηθεί λίγο πάνω από το GameObject πριν συγκρουστεί — αυτό βοηθά στο να γίνει το παιχνίδι μου πιο πιστευτό.
+![Στιγμιότυπο οθόνης (736)](https://user-images.githubusercontent.com/100956280/207048797-ffb8f5c9-a2ea-4ff8-8020-756ca1043604.png)
+
+Και ο κώδικας μέχρι στιγμής έχει τροποποιηθεί ως εξής:
+
+public class theseus_control : MonoBehaviour
+{
+    Rigidbody2D rigidbody2d;
+    float horizontal; 
+    float vertical;
+    
+    // Start is called before the first frame update
+    void Start()
+    {
+        rigidbody2d = GetComponent<Rigidbody2D>();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        horizontal = Input.GetAxis("Horizontal");
+        vertical = Input.GetAxis("Vertical");
+    }
+
+    void FixedUpdate()
+    {
+        Vector2 position = rigidbody2d.position;
+        position.x = position.x + 3.0f * horizontal * Time.deltaTime;
+        position.y = position.y + 3.0f * vertical * Time.deltaTime;
+
+        rigidbody2d.MovePosition(position);
+    }
+}
+
+
+
+
 
 
 # 3rd Deliverable 
