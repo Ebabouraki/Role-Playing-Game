@@ -127,8 +127,7 @@ https://user-images.githubusercontent.com/100956280/201231632-772bdb0d-cde5-4a2a
 
 
 - Έπειτα πρόσθεσα ένα αντικείμενο που δίνει ζωή και ένα αντικέιμενο που θα αυξάνει τη ταχύτητα του Θησέα.
-![υγεια](https://user-images.githubusercontent.com/100956280/207054838-889caed0-cfc4-488f-ba44-90c2a53fe4f8.png)![ταχυτητα](https://user-images.githubusercontent.com/100956280/207054825-d79c988e-811e-4ca0-9463-f5a9d04bbe0e.png)
-
+![υγεια](https://user-images.githubusercontent.com/100956280/207054838-889caed0-cfc4-488f-ba44-90c2a53fe4f8.png)![Στιγμιότυπο οθόνης (739)](https://user-images.githubusercontent.com/100956280/207055585-b9348049-399a-45f9-92ca-82d4d1c9b131.png)
 
 
 # 3rd Deliverable 
