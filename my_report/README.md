@@ -88,8 +88,10 @@ https://user-images.githubusercontent.com/100956280/201231632-772bdb0d-cde5-4a2a
 
 Και ο κώδικας μέχρι στιγμής έχει τροποποιηθεί ως εξής:
 
-public class theseus_control : MonoBehaviour
-{
+    
+     public class theseus_control : MonoBehaviour
+
+      {
     Rigidbody2D rigidbody2d;
     float horizontal; 
     float vertical;
@@ -108,14 +110,14 @@ public class theseus_control : MonoBehaviour
     }
 
     void FixedUpdate()
-    {
+      {
         Vector2 position = rigidbody2d.position;
         position.x = position.x + 3.0f * horizontal * Time.deltaTime;
         position.y = position.y + 3.0f * vertical * Time.deltaTime;
 
         rigidbody2d.MovePosition(position);
+     }
     }
-}
 
 
 
