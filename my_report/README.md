@@ -359,10 +359,11 @@ https://user-images.githubusercontent.com/100956280/201231632-772bdb0d-cde5-4a2a
 
 - Στη συνέχεια δημιούργησα ένα νέο έχθρό, βρήκα το χαρακτήρα που θα αναπαραστήσει το Μινώταυρο σε ένα `sprite sheet` (Εικόνα) για την εισαγωγή του `animation` στο επόμενο βημα. Στην εικόνα αφαιρεσα το φόντο με το [remove background](https://www.remove.bg) 
 - ![minotaur](https://user-images.githubusercontent.com/100956280/207073803-3bbe28f7-f2c4-452b-8172-e783a1286edf.jpg)
-Παρακάτω στο φάκελο Art, μέσα το φάκελο Sprites, με drag & drop πρόσθεσα το `sprite sheet`. Έπειτα, άλλαξα το `sprite mode` σε **multiple** και με το  `sprite editor` έκανα `slice` για να κόψει αυτόματα όλες τις εικόνες που περιέχει το `sprite sheet` όπως δείξαμε και στο δεύτερο εργαστήριο. Πρόσθεσα το sprite στη σκηνή.
+
+-Παρακάτω στο φάκελο Art, μέσα το φάκελο Sprites, με drag & drop πρόσθεσα το `sprite sheet`. Έπειτα, άλλαξα το `sprite mode` σε **multiple** και με το  `sprite editor` έκανα `slice` για να κόψει αυτόματα όλες τις εικόνες που περιέχει το `sprite sheet` όπως δείξαμε και στο δεύτερο εργαστήριο. Πρόσθεσα το sprite στη σκηνή.
 Όπως και στο κύριο χαρακτήρα το Θησέα έτσι και στο Μινώταυρο έβαλα ένα Rigidbody2D και ;ena Collider2D
 
-Για τη κίνηση του εχθρού μου με τη βοήθεια από [εδώ](https://learn.unity.com/tutorial/world-interactions-damage-zones-and-enemies?uv=2020.3&projectId=5c6166dbedbc2a0021b1bc7c#) στο φάκελο scripts, δημιούργησα ένα `C# Script`, το ονόμασα EnemyController. 
+- Για τη κίνηση του εχθρού μου με τη βοήθεια από [εδώ](https://learn.unity.com/tutorial/world-interactions-damage-zones-and-enemies?uv=2020.3&projectId=5c6166dbedbc2a0021b1bc7c#) στο φάκελο scripts, δημιούργησα ένα `C# Script`, το ονόμασα EnemyController. 
 - Πρόσθεσα αυτό το κομμάτι κώδικα για να κινείται ο εχθρός δεξία και αριστερά.
 - Καθώς και να μειώνει τη ζωή του παίκτη όταν έρθει σε σύγκρουση.
 
@@ -421,19 +422,17 @@ https://user-images.githubusercontent.com/100956280/201231632-772bdb0d-cde5-4a2a
         }
        }
 
-Παρακάτω με βοήθεια από αυτό το Tutorial [εδώ](https://learn.unity.com/tutorial/sprite-animation?uv=2020.3&projectId=5c6166dbedbc2a0021b1bc7c#) δηλαδή πήγα πατώντας πάνω στο χαρακτηρα από την ιερασρχία στο window>animation και δημιούργησα ένα νέο animation το walking_right,walking_left,walking_up,walking_down και το hit οπως φένεται παρακάτω: 
+Παρακάτω με βοήθεια από αυτό το Tutorial [εδώ](https://learn.unity.com/tutorial/sprite-animation?uv=2020.3&projectId=5c6166dbedbc2a0021b1bc7c#). Πήγα πατώντας πάνω στο χαρακτηρα από την ιερασρχία στο window>animation και δημιούργησα ένα νέο animation το walking_right,walking_left,walking_up,walking_down και το hit οπως φαίνοτναι τα animation παρακάτω Ομοίως για τον εχθρό, πήγα πατώντας πάνω στο μινώταυρο  από την ιερασρχία στο window>animation και δημιούργησα ένα νέο animation το Minotaur_front,minotaur_back και death_minotaur φαίνονται τα animation παρακάτω: : 
 
 https://user-images.githubusercontent.com/100956280/207085475-4bf7eb6d-3ef8-4bcf-af53-f1573d913db7.mp4
 
-
-Για τη σύνδεση του animation με το κώδικα πήρα βοήθεια και από αυτα τα δυο βίντεο για το πως να δημιουργησω το animator [part1](https://youtu.be/d_gSegD2FXo) [part2](https://www.youtube.com/watch?v=NgTf4av7vmE&ab_channel=Chris%27Tutorials). Tο Animator παίζει το animation που του αναθέτει ο Controller και του λέει να παίξει. Μπορούμε να στείλουμε δεδομένα στον Ελεγκτή μέσω του Animator στο σενάριό μας για να επιλέξουμε το σωστό animation με βάση το gameplay!
-
-![Στιγμιότυπο οθόνης (742)](https://user-images.githubusercontent.com/100956280/207086022-84748f24-b49d-4e3a-9dcc-efb7934acb6d.png)
-
-Παρακάτω με βοήθεια από αυτό το Tutorial [εδώ](https://learn.unity.com/tutorial/sprite-animation?uv=2020.3&projectId=5c6166dbedbc2a0021b1bc7c#) δηλαδή πήγα πατώντας πάνω στο μινώταυρο  από την ιερασρχία στο window>animation και δημιούργησα ένα νέο animation το Minotaur_front,minotaur_back και death_minotaur οπως φένεται παρακάτω: 
-
 https://user-images.githubusercontent.com/100956280/207089552-5e1959d1-f3d0-42ba-ac24-2af35d2030de.mp4 
 
+Για τη σύνδεση του animation με το κώδικα πήρα βοήθεια και από αυτα τα δυο βίντεο για το πως να δημιουργησω το animator [part1](https://youtu.be/d_gSegD2FXo) [part2](https://www.youtube.com/watch?v=NgTf4av7vmE&ab_channel=Chris%27Tutorials). Tο Animator παίζει το animation που του αναθέτει ο Controller και του λέει να παίξει. Μπορούμε να στείλουμε δεδομένα στον Ελεγκτή μέσω του Animator στο σενάριό μας για να επιλέξουμε το σωστό animation με βάση το gameplay!
+- Animator Theseus
+![Στιγμιότυπο οθόνης (742)](https://user-images.githubusercontent.com/100956280/207086022-84748f24-b49d-4e3a-9dcc-efb7934acb6d.png)
+
+- Animator Minotaur
 ![Στιγμιότυπο οθόνης (742)](https://user-images.githubusercontent.com/100956280/207089832-ae3d6abe-cd2a-4cb2-8d90-541951664ab4.png)
 
 
