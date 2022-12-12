@@ -126,6 +126,8 @@ https://user-images.githubusercontent.com/100956280/201231632-772bdb0d-cde5-4a2a
 ![Στιγμιότυπο οθόνης (737)](https://user-images.githubusercontent.com/100956280/207052583-45cd7e3b-09e1-4e5e-9e90-0ca2adadd7e2.png)
 
 
+- Έπειτα πρόσθεσα ένα αντικείμενο που δίνει ζωή και ένα αντικέιμενο που θα αυξάνει τη ταχύτητα του Θησέα.
+![υγεια](https://user-images.githubusercontent.com/100956280/207054838-889caed0-cfc4-488f-ba44-90c2a53fe4f8.png)![ταχυτητα](https://user-images.githubusercontent.com/100956280/207054825-d79c988e-811e-4ca0-9463-f5a9d04bbe0e.png)
 
 
 
