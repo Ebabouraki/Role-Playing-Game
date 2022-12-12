@@ -437,11 +437,12 @@ https://user-images.githubusercontent.com/100956280/207089552-5e1959d1-f3d0-42ba
 
 
 Έπειτα, πρόσθεσα στο παίκτη ένα blade το οποίο πετάει για να χτυπήσει τον εχθρο. Με βάση τις οδηγίες απο [εδώ](https://learn.unity.com/tutorial/world-interactions-projectile?uv=2020.3&projectId=5c6166dbedbc2a0021b1bc7c#). Πρόσθεσα στο φάκελο environment το αντικέιμενο που θα πετάει ο παίκτης το οποίο είναι το εικονιζόμενο:
+
 ![attack](https://user-images.githubusercontent.com/100956280/207105574-d924ba76-17e3-4aaf-8719-a286014c47ad.png)
 
 
 
-Το προσθεσα στη σκηνή και άλλαξα το χρώμα του για να φαίνεται καλύτερα με το background μου. Πρόσθεσα Rigidbody2d και όρισα το gravity στο 0 και εκαν freeze rotation στον αξονα z. Πρόσθεσα, επισης box Collided2D και δημιουργησα ένα νέο script το οποίο ονόμασα Projectile και είναι ως εξής:
+-Το προσθεσα στη σκηνή και άλλαξα το χρώμα του για να φαίνεται καλύτερα με το background μου. Πρόσθεσα Rigidbody2d και όρισα το gravity στο 0 και εκαν freeze rotation στον αξονα z. Πρόσθεσα, επισης box Collided2D και δημιουργησα ένα νέο script το οποίο ονόμασα Projectile και είναι ως εξής:
        
     using System.Collections;
     using System.Collections.Generic;
