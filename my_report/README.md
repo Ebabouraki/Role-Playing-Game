@@ -426,12 +426,11 @@ https://user-images.githubusercontent.com/100956280/201231632-772bdb0d-cde5-4a2a
 https://user-images.githubusercontent.com/100956280/207085475-4bf7eb6d-3ef8-4bcf-af53-f1573d913db7.mp4
 
 
-Για τη σύνδεση του animation με το κώδικα πήρα βοήθεια και από αυτα τα δυο βίντεο για το πως να δημιουργησω το animator [part1](https://youtu.be/d_gSegD2FXo) [part2](https://www.youtube.com/watch?v=NgTf4av7vmE&ab_channel=Chris%27Tutorials) 
+Για τη σύνδεση του animation με το κώδικα πήρα βοήθεια και από αυτα τα δυο βίντεο για το πως να δημιουργησω το animator [part1](https://youtu.be/d_gSegD2FXo) [part2](https://www.youtube.com/watch?v=NgTf4av7vmE&ab_channel=Chris%27Tutorials). Tο Animator παίζει το animation που του αναθέτει ο Controller και του λέει να παίξει. Μπορούμε να στείλουμε δεδομένα στον Ελεγκτή μέσω του Animator στο σενάριό μας για να επιλέξουμε το σωστό animation με βάση το gameplay!
 
 ![Στιγμιότυπο οθόνης (742)](https://user-images.githubusercontent.com/100956280/207086022-84748f24-b49d-4e3a-9dcc-efb7934acb6d.png)
 
 Παρακάτω με βοήθεια από αυτό το Tutorial [εδώ](https://learn.unity.com/tutorial/sprite-animation?uv=2020.3&projectId=5c6166dbedbc2a0021b1bc7c#) δηλαδή πήγα πατώντας πάνω στο μινώταυρο  από την ιερασρχία στο window>animation και δημιούργησα ένα νέο animation το Minotaur_front,minotaur_back και death_minotaur οπως φένεται παρακάτω: 
-
 
 https://user-images.githubusercontent.com/100956280/207089552-5e1959d1-f3d0-42ba-ac24-2af35d2030de.mp4 
 
