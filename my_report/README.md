@@ -610,18 +610,23 @@ https://user-images.githubusercontent.com/100956280/207089552-5e1959d1-f3d0-42ba
 ![healthspeed](https://user-images.githubusercontent.com/100956280/208264323-e4b0f062-2381-4b1d-b32d-b39e071828fd.png)
 
 **Visual Styling - User Interface - Head-Up Display.**
+
 -Soon
 
 **Head-Up Display για το score**
+
 -Soon
 
-** World Interactions - Dialog Raycast.**
+**World Interactions - Dialog Raycast.**
+
 -Soon
 
 **Audio**
+
 -Soon
 
 **Menu**
+
 -Soon
 
 
