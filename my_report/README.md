@@ -600,12 +600,38 @@ https://user-images.githubusercontent.com/100956280/207089552-5e1959d1-f3d0-42ba
  - Τέλος, για το ανέβασμα στο προσωπικό μου repository github, αρχικά πήγα στο `build settings` και αφού έλεγξα αν η πλατφόρμα είναι  `WebGl`  και είναι επιλεγμένη η σκηνή μου και στο `player settings` συγκεκριμένα στο `publishing settings` ειναι  ***disbled*** το  `compression format` και πατησα το  `build and run` και το αποθήκευσα σε ένα φάκελο build. Στο Github ανέβασα το περιεχόμενο του φακέλου  `build`.
 
 # 3rd Deliverable 
+- Αρχικά, με βάση αυτο το tutorial [εδώ](https://learn.unity.com/tutorial/visual-styling-particles?uv=2020.3&projectId=5c6166dbedbc2a0021b1bc7c#) πρόσθεσα εφέ angry smoke στο Μινωταυρo. Παρακάτω στο Art και έφτιαξα μέσα ένα φάκελο Particles και με drag & drop πρόσθεσα το `sprite sheet` με το angry effect. Έπειτα, άλλαξα το `sprite mode` σε **multiple** και με το  `sprite editor` έκανα `slice` για να κόψει αυτόματα όλες τις εικόνες που περιέχει το `sprite sheet`.
 
-- Soon
+![angry-removebg-preview](https://user-images.githubusercontent.com/100956280/208263339-e733a276-ffc6-431b-ab9b-13bbb6cedf99.png)
+    
+ Στην Ιεραρχία πήγα select Effects>Particle System και έτσι δημιούργησα ένα νέο εφέ σωματιδίων. Πρόσθεσα τα sprite του "καπνού" μου στο Texture Sheet Animation στο Inspector του εφέ. Έπειτα στην ενότητα Shape στο Inspector ορισα την ακτίνα στο 0 , επειδή ήθελα όλα τα σωματίδια να ξεκινούν από ένα μόνο σημείο.Αλλάξτε τη γωνία σε 20 για το πόσο θέλω να απλώνονται στη σκηνή μου. Έφτιαξα τη διάρκεια ζωής του στην οθόνη προτού καταστραφεί από το Σύστημα Σωματιδίων και όρισα τη ταχύτητα που τα σωματίδια αρχίζουν να κινούνται. Κάνοντας κλικ  Color over Lifetime έκανα διαφανο το χρώμα έτσι ωστε όταν τα σωματιδια να φένεται οτι ξεθωριάζουν. Ακόμα άλλαξα τη γραμμή για να αλλαζει το μέγεθος τους όταν πλησιάζει προς το τέλος της ζωής τους. Το εφέ το έκαν παιδί του Μινώταυρου για να φαίνεται ότι βγάνει από τη μύτη του.Τέλος, στη συνάρτηση Fix του σεναρίου EnemyController,προσθεσα  smokeEffect.Stop();ετσι ώστε ο καπνός να σταματήσει όταν τελείωσει η ζωή του Μινώταυρου. 
+ -Με τον ίδιο τρόπο δημιούργησα 2 νέα εφε ένα ως παιδι του collectible για τη ζωή και ένα για το collectible της ταχύτητας έτσι ώστε όταν τα συλλεξει ο Θησέας να καταστρέφονται μαζί με το αντικείμενο. 
+ 
+![healthspeed](https://user-images.githubusercontent.com/100956280/208264323-e4b0f062-2381-4b1d-b32d-b39e071828fd.png)
 
+**Visual Styling - User Interface - Head-Up Display.**
+-Soon
+
+**Head-Up Display για το score**
+-Soon
+
+** World Interactions - Dialog Raycast.**
+-Soon
+
+**Audio**
+-Soon
+
+**Menu**
+-Soon
+
+
+ - Τέλος, για το ανέβασμα στο προσωπικό μου repository github, αρχικά πήγα στο `build settings` και αφού έλεγξα αν η πλατφόρμα είναι  `WebGl`  και είναι επιλεγμένη η σκηνή μου και στο `player settings` συγκεκριμένα στο `publishing settings` ειναι  ***disbled*** το  `compression format` και πατησα το  `build and run` και το αποθήκευσα σε ένα φάκελο build. Στο Github ανέβασα το περιεχόμενο του φακέλου  `build`.
+ 
+ 
+ 
 # Extra
-
 - Soon
+
 # Conclusions
 
 
