@@ -1490,11 +1490,21 @@ https://user-images.githubusercontent.com/100956280/211609579-a398627a-cf25-413e
 Επίσης άλλαξα και στο level 2 στο καμβά με το GameOverScreen έτσι ώστε αν χασει στο 2ο level να οδηγει στο δευτερο Menu δηλαδή σε αυτό που είναι ξεκλείδωτο και να μη χρειάζεται να ξαναπεράσει το επιπεδο 1
 
 - Και στα 2 επίπεδα πρόσθεσα μία εκόνα κάτω από τη μπάρα υγείας του Θησέα που δείχνει σε πιο Level βρισκεται ο παίκτης
+
 - Καθως και δύο κουμπία 
+
+
+
 ![wooden round golden return button gui game transparent PNG - 480x480](https://user-images.githubusercontent.com/100956280/211643715-6e5ced91-abfe-45c1-a237-d8013a5d3365.png)
+
+
 Αυτό το οπόιο περιλαμβάνει το script Restart όπως και στο GameOverScreen για να ξαναξεκινήσει το Level απο την αρχή 
 
-![cartoon wooden round golden x symbol button gui game transparent PNG - 480x480](https://user-images.githubusercontent.com/100956280/211643960-5813d7ab-18d5-445e-b88f-1e2787b690c0.png) και αυτό για να πάει πίσω στο αρχικό Μενού αν βρίσκεται στο Level 1 ή στο Μενου 2 αν επαιζε το Level 2.
+
+
+![cartoon wooden round golden x symbol button gui game transparent PNG - 480x480](https://user-images.githubusercontent.com/100956280/211643960-5813d7ab-18d5-445e-b88f-1e2787b690c0.png)
+
+και αυτό για να πάει πίσω στο αρχικό Μενού αν βρίσκεται στο Level 1 ή στο Μενου 2 αν επαιζε το Level 2.
 
 
 
