@@ -743,12 +743,12 @@ UIHealthBar.instance.SetValue(currentHealth / (float)maxHealth);για να αλ
 
 
 
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+     using System.Collections;
+     using System.Collections.Generic;
+    using UnityEngine;
 
-public class NonPlayerCharacter : MonoBehaviour
-{
+    public class NonPlayerCharacter : MonoBehaviour
+    {
     public float displayTime = 10.0f;
     public GameObject dialogBox;
     float timerDisplay;
@@ -776,10 +776,10 @@ public class NonPlayerCharacter : MonoBehaviour
         timerDisplay = displayTime;
         dialogBox.SetActive(true);
     }
-}
+    }
 
 
--Soon
+
 
 **Audio**
 
