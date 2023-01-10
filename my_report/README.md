@@ -621,18 +621,163 @@ UIHealthBar.instance.SetValue(currentHealth / (float)maxHealth);για να αλ
 
 ![Στιγμιότυπο οθόνης (751)](https://user-images.githubusercontent.com/100956280/211556983-63348f6c-0b70-455c-b047-4fd486fd3089.png)
 
-                 
-    
 
 
-
--Soon
 
 **Head-Up Display για το score**
 
--Soon
+
+Για το σκορ με βάση αυτο το tutorial [εδώ](https://youtu.be/pXn9icmreXE) πρόσθεσα μετρητή για τους κρυστάλλους και τα κουβάρια.
+ Πήγα και πρόσθεσα τα αντικείμενα(κρυστάλλους και το κουβάρι) στο φάκελο collectibles τον οποιο έχω δημιουργήσει στα assets και έπειτα τα πρόσθεσα στη σκηνή μου. Όπως και στα προηγούμενα αντικείμενα πρόσθεσα και σε αυτα ένα Box Collider 2D αλλά ενεργοποιησα το πλαίσιο ελέγχου ιδιότητας Is Trigger έτσι ώστε το σύστημα Φυσικής να καταγράφει τη σύγκρουση αλλά ο χαρακτήρας θα περάσει κανονικά από πάνω τους. Επίσης τα έκανα prefab έτσι ώστε να μπορώ να τα χρησιμοποίήσω περισσότερο από μία φορές. Για το score-display δημιούργησα ένα νέο καμβά για τους κρυστάλλους και ένα για τα κουβαρια και το τοποθέτησα έτσι ώστε το σκόρ να εμφανίζεται στην επάνω δεξία γωνιά. Έβαλα στον ένα καμβά την είκονα με τους κρύστάλλους και το κείμενο : 0/100 και για τα κουβάρια αντίστοιχα την είκονα με το κουβάρι και το κείμενο : 0/10 που δείχνει πόσα πρέπει να μαζέψει ο παίκτης.
+
+- Παρακάτω έφτιαξα ένα σενάριο για το κουβάρι έτσι ώστε οταν συγκρουεται ο χαρακτηρας με αυτό το αντικείμενο να καταστεφεται και να αυξανει το σκορ threads κατα 1.
+Ο κώδκας είναι ο εξής:
+
+    using System.Collections;
+    using System.Collections.Generic;
+    using UnityEngine;
+    using UnityEngine.UI;
+
+
+    public class ThreadCollect : MonoBehaviour
+    {
+   
+    public int Threads = 0;
+    static int ThreadsGoal = 10;
+   
+ 
+
+
+    [SerializeField] private Text ThreadsText;
+
+    void Start()
+    {
+        
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        CrystalCollect collect = collision.GetComponent<CrystalCollect>();
+    
+
+        if (collision.gameObject.CompareTag("Thread"))
+        {
+            Destroy(collision.gameObject);
+            Threads++;
+           
+            ThreadsText.text = ": " + Threads + "/10";
+           
+        }
+      
+     }
+    }
+- Αντίστοιχα έφτιαξα ένα σενάριο για τους κρυστάλλους έτσι ώστε οταν συγκρουεται ο χαρακτηρας με αυτό το αντικείμενο να καταστεφεται και να αυξανει το σκορ crystals κατα 5.
+Ο κώδκας είναι ο εξής:
+
+    using System.Collections;
+    using System.Collections.Generic;
+    using UnityEngine;
+    using UnityEngine.UI;
+  
+
+    public class CrystalCollect : MonoBehaviour
+    {
+   
+    public int Crystals = 0;
+    private int CrystalsGoal = 100;
+   
+
+    [SerializeField] private Text CrystalsText;
+    void Start()
+    {
+        
+    }
+
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Crystal"))
+        {
+
+            Destroy(collision.gameObject);
+            Crystals = Crystals + 5;
+           
+            CrystalsText.text = ": " + Crystals + "/100";
+       
+        }
+
+          
+      }
+    }
 
 **World Interactions - Dialog Raycast.**
+Παρακάτω με βοήθεια από αυτό το Tutorial [εδώ](https://learn.unity.com/tutorial/world-interactions-dialogue-raycast?uv=2020.3&projectId=5c6166dbedbc2a0021b1bc7c#5c7f8528edbc2a002053b3c1).  Στη συνέχεια βρήκα το χαρακτήρα που θα αναπαραστήσει την Αριάδνη σε ένα `sprite sheet` (Εικόνα) για την εισαγωγή του `animation` στο επόμενο βημα. Στην εικόνα αφαιρεσα το φόντο με το [remove background](https://www.remove.bg) 
+- ![ariadne-removebg-preview (1)](https://user-images.githubusercontent.com/100956280/211573663-4633b761-5bda-4e3c-9bc9-f93415981d1b.png)
+
+-Παρακάτω στο φάκελο Art, μέσα το φάκελο Sprites, με drag & drop πρόσθεσα το `sprite sheet`. Έπειτα, άλλαξα το `sprite mode` σε **multiple** και με το  `sprite editor` έκανα `slice` για να κόψει αυτόματα όλες τις εικόνες που περιέχει το `sprite sheet` όπως δείξαμε και στο δεύτερο εργαστήριο. Πρόσθεσα το sprite στη σκηνή.
+Έβαλα στην Αριάδνη ένα box Collider2D. Πρόσθεσα στο κώδικα του Θησέα τον εξής κώδικα έτσι ώστε όταν πατηθεί το πλήκτρο Enter να μπορεί να μιλήσει με την Αριάδνη.
+
+
+     if (Input.GetKeyDown(KeyCode.Return))
+        {
+            RaycastHit2D hit = Physics2D.Raycast(rigidbody2d.position + Vector2.up * 0.5f, lookDirection, 1.5f, LayerMask.GetMask("Character"));
+            if (hit.collider != null)
+            {
+                NonPlayerCharacter character = hit.collider.GetComponent<NonPlayerCharacter>();
+                if (character != null)
+                {
+                    character.DisplayDialog();
+                    audioSource.PlayOneShot(DialogueClip);
+                }
+            }
+        }
+        
+Δημιούργησα ένα νέο καμβά δίπλα από τήν Αριάδνη και πρόσθεσα μία εικόνα, επίλέγοντας UI > Image από το μενού περιβάλλοντος.Στο παράθυρο Project , μεταβείτε στο Assets/Art/Sprites/UI είχα τοποθετήσει την εικόνα με το dialog box που ήθελα να χρησιμοποίησω και το έσυρα στο πεδίο Image Source .Έπέκτεινα την εικόνα για να γεμίσειτον Καμβά επιλέγοντας την κάτω δεξιά λαβή ενώ κρατουσα πατημένο το Alt στο Rect Transform.
+Δημιούργησα  UI > Text - TextMeshPro . Αυτό θα εμφανίσει το ακόλουθο παράθυρο διαλόγου:  
+![image](https://user-images.githubusercontent.com/100956280/211578010-48b5b320-f747-4212-99ed-4df8b3a0abe5.png)
+Έκανα κλικ στο Import TMP Essentials και δημιουργήθηκε το κείμενό έπέκτεινα την εικόνα για να γεμίσειτον Καμβά επιλέγοντας την κάτω δεξιά λαβή ενώ κρατουσα πατημένο το Alt στο Rect Transform ακριβώς όπως έκανα για την εικόνα νωρίτερα  στο Inspector ,έγραψα το κείμενο που θέλω να πει η Αριάδνη για να συμβουλέψει τον Θησέα.
+Επειδή ήθελα να εμφανίζεται μόνο όταν πατηθεί το enter 
+για αυτό,επέλεξα τον Καμβά στην Ιεραρχία, καταργήσα την επιλογή του πλαισίου ελέγχου στο επάνω μέρος του Επιθεωρητή.
+και στη συνέχεια, δημιούργησα ένα νέο σενάριο C# που ονομάζεται NonPlayerCharacter και το πρόσθεσα στην Αριάδνη.
+Το σενάριο έχει ως εξής:
+
+
+
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class NonPlayerCharacter : MonoBehaviour
+{
+    public float displayTime = 10.0f;
+    public GameObject dialogBox;
+    float timerDisplay;
+
+    void Start()
+    {
+        dialogBox.SetActive(false);
+        timerDisplay = -1.0f;
+    }
+
+    void Update()
+    {
+        if (timerDisplay >= 0)
+        {
+            timerDisplay -= Time.deltaTime;
+            if (timerDisplay < 0)
+            {
+                dialogBox.SetActive(false);
+            }
+        }
+    }
+
+    public void DisplayDialog()
+    {
+        timerDisplay = displayTime;
+        dialogBox.SetActive(true);
+    }
+}
+
 
 -Soon
 
