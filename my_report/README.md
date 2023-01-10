@@ -960,10 +960,159 @@ https://user-images.githubusercontent.com/100956280/211609579-a398627a-cf25-413e
 
 **Menu**
 
--Soon
+Αρχικά για το Menu δημιούργησα στο photoshop όπως θα ήθελα να ειναι το background το οποίο είναι το εξής:
+![Victory](https://user-images.githubusercontent.com/100956280/211615679-d0d003cf-4140-44b9-b2cd-91af67cc193f.png)
+
+. Στη συνέχεια δημιούργησα μια νέα σκηνή. Δημιουργώντας ένα νέο καμβά, στο Panel πρόσθεσα από τα assets σαν υπόβαθρο της σκηνής μου την εικονα και πρόσθεσα 3 κουμπιά. 
+Διαμορφώνοντας κατάλληλα το μέγεθος, το κείμενο στην εικόνα μου.
+![Στιγμιότυπο οθόνης (752)](https://user-images.githubusercontent.com/100956280/211627448-89218429-7247-45eb-8d8f-e1c4fb8225cd.png)
+ Στο 1ο κουμπί, το οποίο όταν πατηθεί οδηγει στο πρώτο level πρόσθεσα αυτό το σενάριο:
+
+     using System.Collections;
+     using System.Collections.Generic;
+     using UnityEngine;
+    using UnityEngine.SceneManagement;
+
+    public class StartMenu : MonoBehaviour
+   
+    {
+
+    public bool level;
+
+    public void StartGameLevel1()
+    {
+    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        level = true;
+    }
+
+    public void StartGameLevel2()
+    {
+    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
+    level = false;
+    }
+    }
+
+Στο 2ο κουμπί στην αρχή δεν ήθελα να οδηγεί σε κάποιο level καθώς είναι κλειδωμένο οπότε δε προσθεσα κάποιο σενάριο αλλά εβάλα μία εικόνα που είχα βάλει στα assets με ένα κλειδωμένο λουκέτο.
+
+Στο 3ο κουμπί Help&Guide έβαλα να οδηγεί σε μία νέα σκηνή την οποία δημιούργησα η οποία περιλαμβάνει 3 νέα κουμπιά 
+![Στιγμιότυπο οθόνης (752)](https://user-images.githubusercontent.com/100956280/211620343-ebfc4bab-aa3b-49f7-9a47-9b4bbf5cb81f.png)
+
+- Στο κουμπι Controls οδηγεί σε μία νέα σκηνή (στο scenes in build είναι η  7η σκηνή)
+![Στιγμιότυπο οθόνης (753)](https://user-images.githubusercontent.com/100956280/211627696-41b4b208-df39-4cd7-a859-f31f68fd9633.png)
+
+-  η οποία περιλαμβάνει μια είκονα με τα πλήκτρα ελέγχου του Θησέα κατά τη διάρκεια του παιχνιδιού για αυτο περιλαμβάνει το ακόλουθο σενάριο : 
+    
+       using System.Collections;
+       using System.Collections.Generic;
+       using UnityEngine;
+       using UnityEngine.SceneManagement;
+       public class ControlGuides : MonoBehaviour
+
+       {
+       // Start is called before the first frame update
+       void Start()
+       {
+
+       }
+
+       // Update is called once per frame
+       void Update()
+       {
+ 
+
+       }
+       public void ControlMenu()
+       { SceneManager.LoadScene(7); }
+       }
 
 
- - Τέλος, για το ανέβασμα στο προσωπικό μου repository github, αρχικά πήγα στο `build settings` και αφού έλεγξα αν η πλατφόρμα είναι  `WebGl`  και είναι επιλεγμένη η σκηνή μου και στο `player settings` συγκεκριμένα στο `publishing settings` ειναι  ***disbled*** το  `compression format` και πατησα το  `build and run` και το αποθήκευσα σε ένα φάκελο build. Στο Github ανέβασα το περιεχόμενο του φακέλου  `build`.
+- Περιλαμβάνει και το  back για την επιστροφη στο help&guide το οποιο έχει αυτο το σενάριο:
+
+
+      using System.Collections;
+      using System.Collections.Generic;
+      using UnityEngine;
+      using UnityEngine.SceneManagement;
+      public class BackToHelpGuide1 : MonoBehaviour
+
+       {
+        // Start is called before the first frame update
+        void Start()
+       {
+
+       }
+
+       // Update is called once per frame
+       void Update()
+      {
+ 
+
+       }
+       public void BackToHelpGuide()
+       { SceneManager.LoadScene(6); }
+      }
+
+
+
+
+- Στο κουμπι CoLlectibles οδηγεί σε μία νέα σκηνή (στο scenes in build είναι η 10η σκηνή)
+![Στιγμιότυπο οθόνης (754)](https://user-images.githubusercontent.com/100956280/211628029-bb3bcf44-abb2-43d1-b0cc-9297c2d879b8.png)
+
+-   η οποία περιλαμβάνει μια είκονα με τα αντικέιμενα που συλλέγει ο παίκτης είτε θα δώσουν καποιο ability στο Θησέα ή θα αυξήσουν το σκορ κατά τη διάρκεια του παιχνιδιού για αυτο περιλαμβάνει το ακόλουθο σενάριο : 
+
+        using System.Collections;
+        using System.Collections.Generic;
+        using UnityEngine;
+        using UnityEngine.SceneManagement;
+        public class Collectibles : MonoBehaviour
+
+         {
+        // Start is called before the first frame update
+        void Start()
+        {
+
+        }
+
+        // Update is called once per frame
+        void Update()
+        {
+
+
+        }
+        public void CollectibleMenu()
+        { SceneManager.LoadScene(10); }
+        }
+      
+    - Περιλαμβάνει και το back για την επιστροφη στο help&guide το οποιο έχει το ίδιο σενάριο με προηγουμένως.
+
+
+- Στο κουμπι Back στη σκήνή Help&Guide οδηγεί στο αρχικό Μενού (στο scenes in build είναι η σκηνή 0)
+           
+      using System.Collections;
+      using System.Collections.Generic;
+      using UnityEngine;
+      using UnityEngine.SceneManagement;
+      public class GameoverBacktoMenu : MonoBehaviour
+
+      {
+      // Start is called before the first frame update
+      void Start()
+      {
+
+      }
+
+      // Update is called once per frame
+      void Update()
+      {
+
+
+      }
+      public void BackToMenu()
+      { SceneManager.LoadScene(0); }
+      }
+
+
+ - Τέλος, για το ανέβασμα στο προσωπικό μου repository github, αρχικά πήγα στο `build settings` και αφού έλεγξα αν η πλατφόρμα είναι  `WebGl`  και είναι επιλεγμένες όλες οι σκηνές μου και στο `player settings` συγκεκριμένα στο `publishing settings` ειναι  ***disbled*** το  `compression format` και πατησα το  `build and run` και το αποθήκευσα σε ένα φάκελο build. Στο Github ανέβασα το περιεχόμενο του φακέλου  `build`.
  
  
  
