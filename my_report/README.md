@@ -1326,9 +1326,175 @@ https://user-images.githubusercontent.com/100956280/211609579-a398627a-cf25-413e
         }
 
 
+- Επίσης έφτιαξα ένα GameOverScreen  το οποίο εμφανίζεται όταν τελειώσει ο χρόνος ή η ζωή του Θησέα τελειώσει για αυτο πηρα βοήθεια απο αυτο το [βίντεο](https://youtu.be/os3VgdvrRjA). Δημιούργησα ένα νέο καμβα στο Level 1 και πρόσθεσα στο Panel την ίδια εικόνα με το Μενού κάνοντας το Background πιο κόκκινο και έφτιαξα όπως παραπάνω 3 νέα κουμπιά.
+![Στιγμιότυπο οθόνης (758)](https://user-images.githubusercontent.com/100956280/211636144-74d7fb0e-2f0d-4957-906a-0e3f1be9732f.png)
+Στο κουμπί Μενού το οποίο εχει το ακόλουθο σενάριο και οδηγεί στο αρχικό Μενού
+
+     using System.Collections;
+      using System.Collections.Generic;
+      using UnityEngine;
+      using UnityEngine.SceneManagement;
+      public class GameoverBacktoMenu : MonoBehaviour
+
+      {
+      // Start is called before the first frame update
+      void Start()
+      {
+
+      }
+
+      // Update is called once per frame
+      void Update()
+      {
 
 
-       
+      }
+      public void BackToMenu()
+      { SceneManager.LoadScene(0); }
+      }
+
+Στο κουμπί Replay εχω βάλει το ακόλουθο σενάριο για να φορτωσει ξανά από την αρχη το ίδιο Level
+
+    
+    using System.Collections;
+    using System.Collections.Generic;
+    using UnityEngine;
+    using UnityEngine.SceneManagement;
+    public class Restart : MonoBehaviour
+
+    {
+    // Start is called before the first frame update
+    void Start()
+    {
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+
+    }
+
+    public void Retry()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+    }
+    
+Στο κουμπί Quit εχω βάλει το ακόλουθο σενάριο για έξοδο με τη βοήθεια απο αυτο το [βίντεο](https://www.google.com/search?q=quit+unity&client=opera&hs=LA3&sxsrf=AJOqlzXtJmIcDqY1QbvKVX5MYnNqK1vxsw:1673376708865&source=lnms&tbm=vid&sa=X&ved=2ahUKEwiPprqC1r38AhUcRvEDHZxtDk4Q_AUoAXoECAEQAw&biw=1561&bih=759&dpr=1.2#fpstate=ive&vld=cid:496a1e4b,vid:WRoIw3ktZTE).
+         
+      using System.Collections;
+     using System.Collections.Generic;
+     using UnityEngine;
+
+     public class Quit : MonoBehaviour
+     {
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+    public void Quitgame()
+    {
+        Application.Quit();
+        Debug.Log("Quit");
+    }
+    }
+
+- Παρακάτω έκανα ένα νέο Level χρησιμοποιώτας διαφορετικά tiles ακολουθώντας το πρώτο tutorial αλλά για τη διακόσμηση του κόσμου,τα αντικείμενα συλλογης, τον Θησέα, τον Μινόταυρο και την Αριάδνη έχω χρησιμοποίησει τα ίδια που είχα αποθηκέυσει ως Prefab έτσι δημιούργησα πολύ γρήγορα και το δευτερο level.
+
+- Αφού ο παίκτης κερδίσει το πρώτο Level δηλασή σκοτώσει το Μινωταυρο φόρτώνει το δευτερο έχω βάλει μια μικρή καθυστέρηση πριν το φορτώσει
+Στο σενάριο Enemy controller 
+   
+     if (!broken)
+        {
+            StartMenu character = GetComponent<StartMenu>();
+            timeElapsed += Time.deltaTime;
+            if (timeElapsed > delayBeforeLoading)
+            {
+                EnemyHealth enemy = GetComponent<EnemyHealth>();
+                if (enemy.healthenemy == 0) { 
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+                    enemy.healthenemy = enemy.maxhealthenemy;
+            }
+            }
+            return;
+        }
+     
+έχω προσθέσει τα εξής στο οπόιο ουσιαστικά φορτώνει την επόμενη σκηνή οταν κερδίσει έτσι λοιπόν αν είναι στο 1ο Level συμφωνα με τη σειρά στο scene in build βρισκόμαστε στο 1 και το level 2 είναι το 2ο στη σειρά οπότε θα είναι το επόμενο που θα φορτωσει. Στο νουμερο 3 έχω βάλει τη σκηνή της Νικης που εχω δημιουργήσει έτσι ωστε να εμφανιστεί όταν κερδισει το Level 2. Η σκηνή της Νίκης είναι η εξής:
+![Στιγμιότυπο οθόνης (759)](https://user-images.githubusercontent.com/100956280/211640824-92ce8f2e-d994-4549-b457-572688eb861a.png)
+
+Η οποία περιλαμβάνει 2 κουμπιά το Μενου το οποίο οδηγει στο Μενού αλλά εφόσον έχει κερδίσει θελω το δευτερο επίπεδο να είναι ξεκλέιδωτο έτσι εκανα αντιγραφή της σκηνής του StartMenu αλλά άλλαξα στο δευτερο κουμπί την εικόνα του κλειδωμένου λουκέτο με ένα ξεκλείδωτο 
+![Στιγμιότυπο οθόνης (760)](https://user-images.githubusercontent.com/100956280/211642975-ed5bb865-8381-42d7-9655-eefd4bc19661.png)
+
+
+Ακόμα πρόσθεσα το ακόλοθo script για να φορτώνει και το δευτερο level αν πατηθεί το κουμπι
+   
+     using System.Collections;
+    using System.Collections.Generic;
+    using UnityEngine;
+    using UnityEngine.SceneManagement;
+
+    public class Menu2 : MonoBehaviour
+
+     {
+
+    public bool level;
+
+    public void StartGameLevel1()
+    {
+        SceneManager.LoadScene(1);
+        level = true;
+    }
+
+    public void StartGameLevel2()
+    {
+        SceneManager.LoadScene(2);
+        level = false;
+    }
+    }
+
+Στο κουμπί Quit εχω βάλει το ακόλουθο σενάριο για έξοδο με τη βοήθεια απο αυτο το [βίντεο](https://www.google.com/search?q=quit+unity&client=opera&hs=LA3&sxsrf=AJOqlzXtJmIcDqY1QbvKVX5MYnNqK1vxsw:1673376708865&source=lnms&tbm=vid&sa=X&ved=2ahUKEwiPprqC1r38AhUcRvEDHZxtDk4Q_AUoAXoECAEQAw&biw=1561&bih=759&dpr=1.2#fpstate=ive&vld=cid:496a1e4b,vid:WRoIw3ktZTE).
+         
+      using System.Collections;
+     using System.Collections.Generic;
+     using UnityEngine;
+
+     public class Quit : MonoBehaviour
+     {
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+    public void Quitgame()
+    {
+        Application.Quit();
+        Debug.Log("Quit");
+    }
+    }
+
+Επίσης άλλαξα και στο level 2 στο καμβά με το GameOverScreen έτσι ώστε αν χασει στο 2ο level να οδηγει στο δευτερο Menu δηλαδή σε αυτό που είναι ξεκλείδωτο και να μη χρειάζεται να ξαναπεράσει το επιπεδο 1
+
+- Και στα 2 επίπεδα πρόσθεσα μία εκόνα κάτω από τη μπάρα υγείας του Θησέα που δείχνει σε πιο Level βρισκεται ο παίκτης
+- Καθως και δύο κουμπία 
+![wooden round golden return button gui game transparent PNG - 480x480](https://user-images.githubusercontent.com/100956280/211643715-6e5ced91-abfe-45c1-a237-d8013a5d3365.png)
+Αυτό το οπόιο περιλαμβάνει το script Restart όπως και στο GameOverScreen για να ξαναξεκινήσει το Level απο την αρχή 
+
+![cartoon wooden round golden x symbol button gui game transparent PNG - 480x480](https://user-images.githubusercontent.com/100956280/211643960-5813d7ab-18d5-445e-b88f-1e2787b690c0.png) και αυτό για να πάει πίσω στο αρχικό Μενού αν βρίσκεται στο Level 1 ή στο Μενου 2 αν επαιζε το Level 2.
 
 
 
