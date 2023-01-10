@@ -1519,3 +1519,29 @@ https://user-images.githubusercontent.com/100956280/211609579-a398627a-cf25-413e
 
 
 # Sources
+- https://www.remove.bg
+- https://learn.unity.com/tutorial/character-controller-and-keyboard-input?uv=2020.3&projectId=5c6166dbedbc2a0021b1bc7c#5d66a2eeedbc2a00209ce199
+- https://learn.unity.com/tutorial/world-design-tilemaps?uv=2020.3&projectId=5c6166dbedbc2a0021b1bc7c#5cdd60deedbc2a12d5ac2bdf
+- https://learn.unity.com/tutorial/decorating-the-world?uv=2020.3&projectId=5c6166dbedbc2a0021b1bc7c#5ce2878aedbc2a0704649373
+- https://eclass.aegean.gr/modules/document/file.php/511137/Εργαστήριο/Computer%20Games%20Lab%202/Computer%20Games%20Lab%202.pdf
+- https://learn.unity.com/tutorial/world-interactions-blocking-movement?uv=2020.3&projectId=5c6166dbedbc2a0021b1bc7c#
+- https://learn.unity.com/tutorial/world-interactions-collectibles?uv=2020.3&projectId=5c6166dbedbc2a0021b1bc7c#
+- https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiIq7HIn_T7AhW6R_EDHUr4DCUQz40FegQIDBAc&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DfDXtMlL2ahU&usg=AOvVaw1MTnxse5JP302GM8C50DVd
+- https://learn.unity.com/tutorial/world-interactions-damage-zones-and-enemies?uv=2020.3&projectId=5c6166dbedbc2a0021b1bc7c#
+- https://learn.unity.com/tutorial/sprite-animation?uv=2020.3&projectId=5c6166dbedbc2a0021b1bc7c#
+- https://youtu.be/d_gSegD2FXo
+- https://www.youtube.com/watch?v=NgTf4av7vmE&ab_channel=Chris%27Tutorials
+- https://learn.unity.com/tutorial/world-interactions-projectile?uv=2020.3&projectId=5c6166dbedbc2a0021b1bc7c#
+- https://learn.unity.com/tutorial/camera-cinemachine?uv=2020.3&projectId=5c6166dbedbc2a0021b1bc7c#
+- https://learn.unity.com/tutorial/visual-styling-particles?uv=2020.3&projectId=5c6166dbedbc2a0021b1bc7c#
+- https://learn.unity.com/tutorial/visual-styling-ui-head-up-display?uv=2020.3&projectId=5c6166dbedbc2a0021b1bc7c#5c7f8528edbc2a002053b3c2
+- https://youtu.be/pXn9icmreXE
+- (https://learn.unity.com/tutorial/world-interactions-dialogue-raycast?uv=2020.3&projectId=5c6166dbedbc2a0021b1bc7c#5c7f8528edbc2a002053b3c1
+- https://youtu.be/0JXVT28KCIg
+- http://unity3dworkouts.blogspot.com/2015/07/countdown-timer-in-unity-c-mmss-format.html
+- https://forum.unity.com/threads/trying-to-figure-out-how-to-make-a-script-that-counts-coins-then-destroys-a-wall.1128230/
+- https://youtu.be/ZYeXmze5gxg
+- https://www.google.com/search?q=shield+unity&source=lmns&tbm=vid&bih=759&biw=1546&client=opera&hl=el&sa=X&ved=2ahUKEwilnPiQytz7AhVDyrsIHcJjCzIQ_AUoAnoECAEQAg#fpstate=ive&vld=cid:bcd2d27f,vid:gLRupxv8AAw
+- https://youtu.be/os3VgdvrRjA
+- https://www.google.com/search?q=quit+unity&client=opera&hs=LA3&sxsrf=AJOqlzXtJmIcDqY1QbvKVX5MYnNqK1vxsw:1673376708865&source=lnms&tbm=vid&sa=X&ved=2ahUKEwiPprqC1r38AhUcRvEDHZxtDk4Q_AUoAXoECAEQAw&biw=1561&bih=759&dpr=1.2#fpstate=ive&vld=cid:496a1e4b,vid:WRoIw3ktZTE
+- 
