@@ -710,6 +710,11 @@ UIHealthBar.instance.SetValue(currentHealth / (float)maxHealth);για να αλ
       }
     }
 
+
+https://user-images.githubusercontent.com/100956280/211582391-a3f58bb9-f27a-4324-9ad0-d1419553c74d.mp4
+
+
+
 **World Interactions - Dialog Raycast.**
 Παρακάτω με βοήθεια από αυτό το Tutorial [εδώ](https://learn.unity.com/tutorial/world-interactions-dialogue-raycast?uv=2020.3&projectId=5c6166dbedbc2a0021b1bc7c#5c7f8528edbc2a002053b3c1).  Στη συνέχεια βρήκα το χαρακτήρα που θα αναπαραστήσει την Αριάδνη σε ένα `sprite sheet` (Εικόνα) για την εισαγωγή του `animation` στο επόμενο βημα. Στην εικόνα αφαιρεσα το φόντο με το [remove background](https://www.remove.bg) 
 - ![ariadne-removebg-preview (1)](https://user-images.githubusercontent.com/100956280/211573663-4633b761-5bda-4e3c-9bc9-f93415981d1b.png)
@@ -735,6 +740,8 @@ UIHealthBar.instance.SetValue(currentHealth / (float)maxHealth);για να αλ
 Δημιούργησα ένα νέο καμβά δίπλα από τήν Αριάδνη και πρόσθεσα μία εικόνα, επίλέγοντας UI > Image από το μενού περιβάλλοντος.Στο παράθυρο Project , μεταβείτε στο Assets/Art/Sprites/UI είχα τοποθετήσει την εικόνα με το dialog box που ήθελα να χρησιμοποίησω και το έσυρα στο πεδίο Image Source .Έπέκτεινα την εικόνα για να γεμίσειτον Καμβά επιλέγοντας την κάτω δεξιά λαβή ενώ κρατουσα πατημένο το Alt στο Rect Transform.
 Δημιούργησα  UI > Text - TextMeshPro . Αυτό θα εμφανίσει το ακόλουθο παράθυρο διαλόγου:  
 ![image](https://user-images.githubusercontent.com/100956280/211578010-48b5b320-f747-4212-99ed-4df8b3a0abe5.png)
+
+
 Έκανα κλικ στο Import TMP Essentials και δημιουργήθηκε το κείμενό έπέκτεινα την εικόνα για να γεμίσειτον Καμβά επιλέγοντας την κάτω δεξιά λαβή ενώ κρατουσα πατημένο το Alt στο Rect Transform ακριβώς όπως έκανα για την εικόνα νωρίτερα  στο Inspector ,έγραψα το κείμενο που θέλω να πει η Αριάδνη για να συμβουλέψει τον Θησέα.
 Επειδή ήθελα να εμφανίζεται μόνο όταν πατηθεί το enter 
 για αυτό,επέλεξα τον Καμβά στην Ιεραρχία, καταργήσα την επιλογή του πλαισίου ελέγχου στο επάνω μέρος του Επιθεωρητή.
@@ -777,8 +784,71 @@ UIHealthBar.instance.SetValue(currentHealth / (float)maxHealth);για να αλ
         dialogBox.SetActive(true);
     }
     }
+    
+    ![ariadnexbutton](https://user-images.githubusercontent.com/100956280/211582245-a22d3f48-948d-4c34-bfc5-679f5454ae76.png)
 
 
+
+Χρησιμοποιώντας το Raycast ο Θησέας θα μπορεί να ανοίγει μια πόρτα και να γίνεται teleport σε κάποιο άλλο σημείο της πίστας με βοήθεια απο 
+ [εδώ](https://youtu.be/0JXVT28KCIg). Έγραψα το παρακάτω σενάριο όταν ο χρήστης βρίσκεται στη πύλη και πατήσει το πληκτρο Τ να μεταφέρεται σε κάποιο άλλο σημέιο της πίστας.
+ 
+ 
+      using System.Collections;
+     using System.Collections.Generic;
+     using UnityEngine;
+
+    public class PlayerTeleport : MonoBehaviour
+    {
+       private GameObject currentTeleporter;
+
+    AudioSource audioSource;
+    public AudioClip TeleportClip;
+    // Update is called once per frame
+
+    void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            if (currentTeleporter != null)
+            {
+                transform.position = currentTeleporter.GetComponent<Teleporter>().GetDestination().position;
+                audioSource.PlayOneShot(TeleportClip);
+
+            }
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Teleporter"))
+        {
+            currentTeleporter = collision.gameObject;
+           // audioSource.PlayOneShot(TeleportClip);
+
+        }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Teleporter"))
+        {
+            if (collision.gameObject == currentTeleporter)
+            {
+                currentTeleporter = null;
+               // audioSource.PlayOneShot(TeleportClip);
+            }
+        }
+     }
+ 
+    }
+    
+
+https://user-images.githubusercontent.com/100956280/211585365-6cb0d478-532d-4e70-919f-c6f7d0dbc3b6.mp4
+
+
+    
 
 
 **Audio**
